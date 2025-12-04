@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoBoundaries Educational Map</title>
+    
+    <!-- MapLibre GL JS -->
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+    
+    <!-- Fuse.js for fuzzy search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <!-- Search Box -->
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="🔍 Search...">
+            <div id="search-results" class="search-results hidden"></div>
+        </div>
+
+        <!-- Country Dropdown -->
+        <select id="country-dropdown" class="country-dropdown">
+            <option value="" disabled selected>Select a Country...</option>
+            <!-- Options populated via JS -->
+        </select>
+
+        <!-- Admin Level Buttons -->
+        <div id="admin-buttons-container" class="admin-buttons-container">
+            <!-- Buttons populated via JS -->
+        </div>
+    </div>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Attribution -->
+    <div class="attribution-container">
+        <button id="attribution-btn" class="attribution-btn">Attribution</button>
+    </div>
+
+    <!-- Attribution Modal -->
+    <div id="attribution-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h3>Data Sources</h3>
+            <ul>
+                <li><strong>Administrative Boundaries:</strong> geoBoundaries (www.geoboundaries.org)<br>
+                Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866.</li>
+                <li><strong>Basemap:</strong> Carto / MapLibre</li>
+                <li><strong>Terminology Reference:</strong> Compiled from ISO 3166-2, UN OCHA, and national statistics offices.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Configuration -->
+    <script src="config.js"></script>
+    <!-- Application Logic -->
+    <script src="app.js"></script>
+</body>
+</html>

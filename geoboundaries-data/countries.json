@@ -1,0 +1,22 @@
+[
+    {
+        "iso": "AFG",
+        "name": "Afghanistan",
+        "disputed": false
+    },
+    {
+        "iso": "CHE",
+        "name": "Switzerland",
+        "disputed": false
+    },
+    {
+        "iso": "TWN",
+        "name": "Taiwan (Disputed Territory)",
+        "disputed": true
+    },
+    {
+        "iso": "USA",
+        "name": "United States of America",
+        "disputed": false
+    }
+]

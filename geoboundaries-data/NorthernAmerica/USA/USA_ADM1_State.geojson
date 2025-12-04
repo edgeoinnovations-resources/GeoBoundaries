@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "shapeName": "Minnesota",
+                "shapeISO": "US-MN",
+                "shapeGroup": "USA",
+                "shapeType": "ADM1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -97.2,
+                            49.0
+                        ],
+                        [
+                            -97.2,
+                            43.5
+                        ],
+                        [
+                            -89.5,
+                            43.5
+                        ],
+                        [
+                            -89.5,
+                            49.0
+                        ],
+                        [
+                            -97.2,
+                            49.0
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}

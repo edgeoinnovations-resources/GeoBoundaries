@@ -1,0 +1,39 @@
+{
+    "USA": {
+        "ADM0": {
+            "United States of America": {
+                "videos": [],
+                "images": [],
+                "description": "A country primarily located in North America."
+            }
+        },
+        "ADM1": {
+            "Minnesota": {
+                "videos": [],
+                "images": [],
+                "description": "Land of 10,000 lakes."
+            },
+            "California": {
+                "videos": [],
+                "images": [],
+                "description": "The Golden State."
+            }
+        },
+        "ADM2": {
+            "Hennepin County": {
+                "videos": [],
+                "images": [],
+                "description": "Home to Minneapolis."
+            }
+        }
+    },
+    "CHE": {
+        "ADM1": {
+            "Zürich": {
+                "videos": [],
+                "images": [],
+                "description": "The largest canton by population."
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "shapeName": "Switzerland",
+                "shapeISO": "CHE",
+                "shapeGroup": "CHE",
+                "shapeType": "ADM0"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            6.0,
+                            47.8
+                        ],
+                        [
+                            6.0,
+                            45.8
+                        ],
+                        [
+                            10.5,
+                            45.8
+                        ],
+                        [
+                            10.5,
+                            47.8
+                        ],
+                        [
+                            6.0,
+                            47.8
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "shapeName": "United States of America",
+                "shapeISO": "USA",
+                "shapeGroup": "USA",
+                "shapeType": "ADM0"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -125.0,
+                            48.5
+                        ],
+                        [
+                            -125.0,
+                            32.5
+                        ],
+                        [
+                            -67.0,
+                            32.5
+                        ],
+                        [
+                            -67.0,
+                            48.5
+                        ],
+                        [
+                            -125.0,
+                            48.5
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}

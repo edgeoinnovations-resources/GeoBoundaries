@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "shapeName": "Hennepin County",
+                "shapeISO": "US-MN-053",
+                "shapeGroup": "USA",
+                "shapeType": "ADM2"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -93.77,
+                            45.25
+                        ],
+                        [
+                            -93.77,
+                            44.78
+                        ],
+                        [
+                            -93.18,
+                            44.78
+                        ],
+                        [
+                            -93.18,
+                            45.25
+                        ],
+                        [
+                            -93.77,
+                            45.25
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}

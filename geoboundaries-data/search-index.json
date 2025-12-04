@@ -1,0 +1,64 @@
+{
+    "index": [
+        {
+            "id": "USA_ADM0_United States of America",
+            "name": "United States of America",
+            "type": "Country",
+            "level": "ADM0",
+            "iso": "USA",
+            "hierarchy": [
+                "United States of America"
+            ],
+            "center": [
+                -98.5795,
+                39.8283
+            ]
+        },
+        {
+            "id": "USA_ADM1_Minnesota",
+            "name": "Minnesota",
+            "type": "State",
+            "level": "ADM1",
+            "iso": "USA",
+            "hierarchy": [
+                "Minnesota",
+                "United States of America"
+            ],
+            "center": [
+                -94.6859,
+                46.7296
+            ]
+        },
+        {
+            "id": "USA_ADM2_Hennepin County",
+            "name": "Hennepin County",
+            "type": "County",
+            "level": "ADM2",
+            "iso": "USA",
+            "hierarchy": [
+                "Hennepin County",
+                "Minnesota",
+                "United States of America"
+            ],
+            "center": [
+                -93.4687,
+                45.0061
+            ]
+        },
+        {
+            "id": "CHE_ADM1_Zürich",
+            "name": "Zürich",
+            "type": "Canton",
+            "level": "ADM1",
+            "iso": "CHE",
+            "hierarchy": [
+                "Zürich",
+                "Switzerland"
+            ],
+            "center": [
+                8.6507,
+                47.3925
+            ]
+        }
+    ]
+}

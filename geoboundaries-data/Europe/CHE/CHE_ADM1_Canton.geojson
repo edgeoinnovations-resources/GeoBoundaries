@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "shapeName": "Zürich",
+                "shapeISO": "CH-ZH",
+                "shapeGroup": "CHE",
+                "shapeType": "ADM1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            8.3,
+                            47.7
+                        ],
+                        [
+                            8.3,
+                            47.1
+                        ],
+                        [
+                            8.9,
+                            47.1
+                        ],
+                        [
+                            8.9,
+                            47.7
+                        ],
+                        [
+                            8.3,
+                            47.7
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}

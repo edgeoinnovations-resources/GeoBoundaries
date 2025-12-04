@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(for continent in Africa Asia Europe Latin_America_and_the_Caribbean Northern_America Oceania Undefined)",
+      "Bash(do echo '=== $continent ===' ls -d /Users/paulstrootman/Desktop/GeoBoundaries/geoboundaries_data/$continent/*)",
+      "Bash(ls:*)",
+      "Bash(done)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

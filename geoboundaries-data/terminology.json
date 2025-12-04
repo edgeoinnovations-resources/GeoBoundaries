@@ -1,0 +1,45 @@
+{
+  "USA": {
+    "name": "United States of America",
+    "continent": "NorthernAmerica",
+    "disputed": false,
+    "defaultView": {
+      "center": [-98.5795, 39.8283],
+      "zoom": 4
+    },
+    "levels": {
+      "ADM0": { "term": "Country", "file": "USA_ADM0_Country.geojson" },
+      "ADM1": { "term": "State", "file": "USA_ADM1_State.geojson" },
+      "ADM2": { "term": "County", "file": "USA_ADM2_County.geojson" }
+    }
+  },
+  "CHE": {
+    "name": "Switzerland",
+    "continent": "Europe",
+    "disputed": false,
+    "defaultView": {
+      "center": [8.2275, 46.8182],
+      "zoom": 7
+    },
+    "levels": {
+      "ADM0": { "term": "Country", "file": "CHE_ADM0_Country.geojson" },
+      "ADM1": { "term": "Canton", "file": "CHE_ADM1_Canton.geojson" },
+      "ADM2": { "term": "District", "file": "CHE_ADM2_District.geojson" },
+      "ADM3": { "term": "Municipality", "file": "CHE_ADM3_Municipality.geojson" }
+    }
+  },
+  "TWN": {
+    "name": "Taiwan",
+    "continent": "Asia",
+    "disputed": true,
+    "defaultView": {
+      "center": [120.9605, 23.6978],
+      "zoom": 7
+    },
+    "levels": {
+      "ADM0": { "term": "Country", "file": "TWN_ADM0_Country.geojson" },
+      "ADM1": { "term": "Special Municipality", "file": "TWN_ADM1_SpecialMunicipality.geojson" },
+      "ADM2": { "term": "District", "file": "TWN_ADM2_District.geojson" }
+    }
+  }
+}
