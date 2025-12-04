@@ -184,13 +184,8 @@ async function loadAndRenderLayer(iso, levelCode) {
     if (!state.geoJsonCache[cacheKey]) {
         const countryData = state.terminology[iso];
         const filename = countryData.levels[levelCode].file;
-        const continent = countryData.continent; // Assuming structure matches folder
-        // Note: The folder structure in terminology.json isn't explicitly defined in the spec for the path construction,
-        // but the spec says "geoboundaries-data/Africa/DZA/...". 
-        // We need to construct the path. 
-        // In terminology.json, I added "continent" property to help with this.
-
-        const path = `${config.dataBaseUrl}/${continent}/${iso}/${filename}`;
+        // Filename in terminology.json is the full relative path from dataBaseUrl
+        const path = `${config.dataBaseUrl}/${filename}`;
 
         try {
             const res = await fetch(path);
