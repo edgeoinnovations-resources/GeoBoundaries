@@ -1,5 +1,6 @@
 /* Reset & Base */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -20,11 +21,13 @@ body, html {
     display: flex;
     align-items: center;
     gap: 15px;
-    pointer-events: none; /* Allow clicks to pass through empty space */
+    pointer-events: none;
+    /* Allow clicks to pass through empty space */
 }
 
-.top-bar > * {
-    pointer-events: auto; /* Re-enable pointer events for children */
+.top-bar>* {
+    pointer-events: auto;
+    /* Re-enable pointer events for children */
 }
 
 #map {
@@ -46,7 +49,7 @@ body, html {
     width: 250px;
     font-size: 14px;
     outline: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .search-input:focus {
@@ -64,7 +67,7 @@ body, html {
     max-height: 300px;
     overflow-y: auto;
     z-index: 20;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .search-result-item {
@@ -84,7 +87,7 @@ body, html {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* Dropdown */
@@ -98,7 +101,7 @@ body, html {
     font-size: 14px;
     outline: none;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .country-dropdown:focus {
@@ -120,7 +123,7 @@ body, html {
     font-size: 14px;
     cursor: pointer;
     transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .admin-button:hover {
@@ -137,7 +140,8 @@ body, html {
 /* Attribution */
 .attribution-container {
     position: absolute;
-    bottom: 30px; /* Above map attribution */
+    bottom: 30px;
+    /* Above map attribution */
     right: 10px;
     z-index: 10;
 }
@@ -177,7 +181,7 @@ body, html {
     width: 400px;
     position: relative;
     border: 1px solid #333;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .close-btn {
@@ -198,7 +202,8 @@ body, html {
     background: #1a1a2e;
     color: #eaeaea;
     border-radius: 8px;
-    padding: 0; /* Remove default padding to handle media better */
+    padding: 0;
+    /* Remove default padding to handle media better */
     max-width: 350px;
     border: 1px solid #333;
     overflow: hidden;
@@ -238,7 +243,8 @@ body, html {
     margin-bottom: 12px;
 }
 
-.popup-media iframe, .popup-media img {
+.popup-media iframe,
+.popup-media img {
     width: 100%;
     border-radius: 4px;
     display: block;
