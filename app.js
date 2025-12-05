@@ -137,19 +137,26 @@ function renderAdminButtons(iso) {
     els.adminButtonsContainer.innerHTML = '';
     const countryData = state.terminology[iso];
 
-    Object.entries(countryData.levels).forEach(([levelCode, levelInfo]) => {
-        const btn = document.createElement('button');
-        btn.className = 'admin-button';
-        btn.textContent = levelInfo.term;
-        btn.dataset.level = levelCode;
+    Object.entries(countryData.levels)
+        .sort((a, b) => {
+            // Extract number from "ADM0", "ADM1" etc.
+            const numA = parseInt(a[0].replace(/\D/g, '')) || 0;
+            const numB = parseInt(b[0].replace(/\D/g, '')) || 0;
+            return numA - numB;
+        })
+        .forEach(([levelCode, levelInfo]) => {
+            const btn = document.createElement('button');
+            btn.className = 'admin-button';
+            btn.textContent = levelInfo.term;
+            btn.dataset.level = levelCode;
 
-        btn.addEventListener('click', () => {
-            const isActive = state.activeLevels.has(levelCode);
-            toggleAdminLevel(iso, levelCode, !isActive);
+            btn.addEventListener('click', () => {
+                const isActive = state.activeLevels.has(levelCode);
+                toggleAdminLevel(iso, levelCode, !isActive);
+            });
+
+            els.adminButtonsContainer.appendChild(btn);
         });
-
-        els.adminButtonsContainer.appendChild(btn);
-    });
 }
 
 async function toggleAdminLevel(iso, levelCode, shouldEnable) {
