@@ -145,9 +145,21 @@ async function selectCountry(iso) {
     renderAdminButtons(iso);
 
     // Auto-select ADM0 (or first available level)
-    const levels = Object.keys(countryData.levels);
-    if (levels.length > 0) {
-        toggleAdminLevel(iso, levels[0], true); // Force enable
+    const levelKeys = Object.keys(countryData.levels);
+
+    let defaultLevel = 'ADM0';
+    if (!levelKeys.includes('ADM0')) {
+        // Fallback: Sort to find the lowest level (ADM1, ADM2...)
+        levelKeys.sort((a, b) => {
+            const numA = parseInt(a.replace(/\D/g, '')) || 0;
+            const numB = parseInt(b.replace(/\D/g, '')) || 0;
+            return numA - numB;
+        });
+        defaultLevel = levelKeys[0];
+    }
+
+    if (defaultLevel) {
+        toggleAdminLevel(iso, defaultLevel, true);
     }
 }
 
