@@ -107,6 +107,17 @@ function setupEventListeners() {
 // --- Core Logic ---
 
 async function selectCountry(iso) {
+    // Clear previous country layers if changing country
+    if (state.selectedCountryISO && state.selectedCountryISO !== iso) {
+        try {
+            state.activeLevels.forEach(levelCode => {
+                removeLayer(state.selectedCountryISO, levelCode);
+            });
+        } catch (error) {
+            console.error("Error clearing previous country layers:", error);
+        }
+    }
+
     state.selectedCountryISO = iso;
     state.activeLevels.clear();
 
@@ -117,11 +128,18 @@ async function selectCountry(iso) {
     }
 
     // Fly to country
-    map.flyTo({
-        center: countryData.defaultView.center,
-        zoom: countryData.defaultView.zoom,
-        essential: true
-    });
+    if (countryData.defaultView.bounds) {
+        map.fitBounds(countryData.defaultView.bounds, {
+            padding: 50,
+            essential: true
+        });
+    } else {
+        map.flyTo({
+            center: countryData.defaultView.center,
+            zoom: countryData.defaultView.zoom,
+            essential: true
+        });
+    }
 
     // Update UI
     renderAdminButtons(iso);
